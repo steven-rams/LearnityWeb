@@ -14,6 +14,7 @@
   
   
 }
+
  
 #item-0 { /* menu principal*/
   margin-bottom: 20px;
@@ -26,17 +27,7 @@
   height: 50px;
   
 }
-#item-01 { /* menu principal*/
-  margin-bottom: 20px;
-  
-  grid-row-start: 2;
-  grid-column-start: 2;
 
-  grid-row-end: 2;
-  grid-column-end: 7;
-  height: 50px;
-  
-}
 #item-1 { /* menu secundario */
    
  
@@ -80,6 +71,7 @@
   height: inherit;
   
 }
+
 
 * {
   padding: 0;
