@@ -28,6 +28,7 @@
   
 }
 
+
 #item-1 { /* menu secundario */
    
  
@@ -211,6 +212,8 @@ body.dark .tm-header-wrapper a{
   display: -ms-flexbox;
   display: flex;
   outline: none;
+  float: right;
+  margin-top: 8px;
 }
 
 .switch::after {
@@ -766,4 +769,183 @@ li{
   .footer-col{
     width: 100%;
 }
+}
+
+  body{margin:0;padding:0;}
+.hamburger{
+	position:fixed;
+  background-color:transparent;
+	left:0;
+	top:0;
+	height:30px;
+  margin-top: 50px ;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#333333;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+   background-color: rgba(145, 5, 5, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+  margin:0;padding:0;
+}
+.menuppal ul li { 
+  list-style: none;
+	text-align:center;
+	font-family: Verdadna, Arial, Helvetica;
+	
+	font-size:1.5rem;
+	line-height:3em;
+	height:3em;
+  color:#369;
+	text-transform:none;
+	font-weight:bold;
+}
+.menuppal ul li a{
+  text-decoration:none;
+  color:#369;
+}
+.menuppal ul li a:hover{
+  text-decoration:none;
+  color:#333;
+}
+  
+
+nav {
+  background-color: rgb(255, 252, 252)3;
+  
+  color: black;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+  
+}
+
+nav > ul > li > a {
+  color: rgb(10, 9, 9);
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+ 
+
+}
+
+nav li > ul{
+  display : none;
+  margin-top:1px;
+  background: #76b852;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+z-index: 2000;  
+}
+
+nav li > ul li{
+  display: block;
+  
+}
+
+nav  li > ul li a {
+  color: #111;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+nav li{
+  border-radius: 18px;
+}
+
+nav li:hover  {
+  background: #76b852;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 18px;
+  transition: 1s;
+  
+}
+nav li:hover > ul{
+  position:absolute;
+  display : block;
+  border-radius: 18px;
+  transition: 1s;
+}
+nav li > ul > li ul  {
+  display: none;
+  background-color: #888;
+}
+nav li > ul > li:hover > ul  {
+  position:absolute;
+  display : block;
+  margin-left:100%;
+  margin-top:-3em;
 }
