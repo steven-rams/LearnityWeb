@@ -177,7 +177,7 @@ body.dark .enlaces  a{
   width: 30px;
   height: 30px;
   position: absolute;
-  background: #F1F1F1;
+  background: linear-gradient(180deg, #dfe5e7 15%, #acaeaf 85%);
   top: 0;
   left: 0;
   right: unset;
@@ -189,7 +189,7 @@ body.dark .enlaces  a{
 }
 
 .switch.active {
-  background: orange;
+  background: rgb(230, 226, 4);
   color: black;
 }
 
