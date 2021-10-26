@@ -1,171 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Darkmode con Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darkmode con Javascript</title>
 
-	<link rel="stylesheet" href="/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/css/estilos.css">
-	<link rel="stylesheet" href="/css2/forms.css">
-	<link rel="stylesheet" href="/css2/forms.css.map">
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="">
-  
-  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">     
 
-	
-  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
 </head>
+
 <body>
-	<header class="header" >
-		<!-- Menu bar -- Johanna	 -->
-		<nav> 
-				<ul>
-					<li>
-					<a href="#">Home</a>
-					<ul>
-					  <li><a href="#">Quiénes somos</a></li>
-					  <li>
-						<a href="#">Contactanos</a>
-						<ul>
-						  <li><a href="#">One</a></li>
-						  <li><a href="#">Two</a></li>
-						  <li><a href="#">Three</a></li>
-						</ul>
-					  </li>
-					</ul>
-				  </li>
-					<li>
-						<a href="">Machine learning</a>
-					</li>
-					<li>
-						<a href="">Empresas</a>
-					</li>
-					<li>
-						<a href="">Games</a>
-					</li>
-					<li>
-						<a href="">Trabaja</a>
-						<ul>
-							<li><a href="#">Aplica</a></li>
-							<li><a href="#">Ofertas laborales</a></li>
-						</ul>
-					</li>
-				  
-				  <li>
-					<a href="#">Aprende</a>
-					<ul>
-					  <li><a href="#">Machine Learning</a></li>
-					  <li><a href="#">VideoJuegos</a></li>
-					  <li><a href="#">Data Science</a></li>
-					  <li><a href="#">IA</a></li>
-					  <li><a href="#">Deep Learning</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="/html/form.html">Login</a>
-				  </li>
-				  <li><a href="#">Registrarse</a></li>
-				  <button class="switch" id="switch">
+    <header class="header">
+        <!-- Menu bar -- Johanna	 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li>
+                            <a href="#">Contactanos</a>
+                            <ul>
+                                <li><a href="#">One</a></li>
+                                <li><a href="#">Two</a></li>
+                                <li><a href="#">Three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/html/MachineLearning.html">Machine learning</a>
+                </li>
+                <li>
+                    <a href="">Empresas</a>
+                </li>
+                <li>
+                    <a href="">Games</a>
+                </li>
+                <li>
+                    <a href="">Trabaja</a>
+                    <ul>
+                        <li><a href="#">Aplica</a></li>
+                        <li><a href="#">Ofertas laborales</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Aprende</a>
+                    <ul>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">VideoJuegos</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">IA</a></li>
+                        <li><a href="#">Deep Learning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/html/form.html">Login</a>
+                </li>
+                <li><a href="#">Registrarse</a></li>
+                <button class="switch" id="switch">
 					<span><i class="fas fa-sun"></i></span>
 					<span><i class="fas fa-moon"></i> </span>
 				</button>
-				</ul>
-				
-			  </nav>
-		  
+            </ul>
 
-	</header>
-	<div >	
-		
-		
-		
-		<div class="hamburger">
-			<div class="_layer -top"></div>
-			<div class="_layer -mid"></div>
-			<div class="_layer -bottom"></div>
-			
-		</div>
-		<nav class="menuppal">
-			<ul>
-			  <li><a href="#">Opcion 1</a></li>
-			  <li><a href="#">Opcion 2</a></li>
-			  <li><a href="#">Opcion 3</a></li>
-			  <li><a href="#">Opcion 4</a></li>
-			  
-			</ul>
-			<button class="switch" id="switch">
+        </nav>
+
+
+    </header>
+    <div>
+
+
+
+        <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+
+        </div>
+        <nav class="menuppal">
+            <ul>
+                <li><a href="#">Opcion 1</a></li>
+                <li><a href="#">Opcion 2</a></li>
+                <li><a href="#">Opcion 3</a></li>
+                <li><a href="#">Opcion 4</a></li>
+
+            </ul>
+            <button class="switch" id="switch">
 				<span><i class="fas fa-sun"></i></span>
 				<span><i class="fas fa-moon"></i> </span>
 			</button>
-		  </nav>
-		<div>
-				<div class="Container">}
-					
-				</div>
-						<footer class="article-info">
-						  <!-- information -->
-						</footer>
-					  </div>
-					</a>
-			  </div>
-		  </aside>
-		  <footer class="footer" id="item-4">
-			  
-			<div class="container">
-			  <div class="row">
-				<div class="footer-col">
-				  <h4>Instituciones</h4>
-				  <ul>
-					<li><a href="https://www.upb.edu.co/es/la-universidad">UPB</a></li>
-					<li><a href="https://www.misiontic2022.gov.co/portal/">Mision TIC</a></li>
-					<li><a href="https://machinelearning.org.in/">Machine Learning ORG</a></li>
-					<li><a href="#"></a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>Integrantes & Acompañantes</h4>
-				  <ul>
-					<li><a href="#">formador jose dager montoya	</a></li>
-					<li><a href="#">Tutor Julio césar rojas rios</a></li>
-					<li><a href="https://www.linkedin.com/in/steven-david-ramos/">scrum master Steven David Ramos</a></li>
-					<li><a href="#">software dev Jhana sanchez </a></li>
-					<li><a href="#">software dev mauricio castro</a></li>
-					<li><a href="#">software dev andres duque</a></li>
-					<li><a href="https://www.linkedin.com/in/andresfelipemonsalve/">software dev andres monsalve</a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>Web</h4>
-				  <ul>
-					<li><a href="#">Politicas de privacidad</a></li>
-					<li><a href="#">politica de cookies</a></li>
-					<li><a href="#">politicas de accesibilidad</a></li>
-					<li><a href="#"></a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>follow us</h4>
-				  <div class="social-links">
-					<a href="#"><i class="fab fa-google"></i></a>
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		 </footer>  
-	  </div>
-	  
-	
-	<script src="/js/main.js"></script>
+        </nav>
+        <div>
+            <div class="Container">}
+
+            </div>
+            <footer class="article-info">
+                <!-- information -->
+            </footer>
+        </div>
+        </a>
+    </div>
+    </aside>
+    <footer class="footer" id="item-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Instituciones</h4>
+                    <ul>
+                        <li><a href="https://www.upb.edu.co/es/la-universidad">UPB</a></li>
+                        <li><a href="https://www.misiontic2022.gov.co/portal/">Mision TIC</a></li>
+                        <li><a href="https://machinelearning.org.in/">Machine Learning ORG</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Integrantes & Acompañantes</h4>
+                    <ul>
+                        <li><a href="#">formador jose dager montoya	</a></li>
+                        <li><a href="#">Tutor Julio césar rojas rios</a></li>
+                        <li><a href="https://www.linkedin.com/in/steven-david-ramos/">scrum master Steven David Ramos</a></li>
+                        <li><a href="#">software dev Johanna sanchez </a></li>
+                        <li><a href="#">software dev mauricio castro</a></li>
+                        <li><a href="#">software dev andres duque</a></li>
+                        <li><a href="https://www.linkedin.com/in/andresfelipemonsalve/">software dev andres monsalve</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Web</h4>
+                    <ul>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">politica de cookies</a></li>
+                        <li><a href="#">politicas de accesibilidad</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="/js/main.js"></script>
 </body>
 <script src="/js/hamburgermenu.js"></script>
-<script src="/js/forms.js"></script>
+
 </html>

@@ -1,172 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Darkmode con Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darkmode con Javascript</title>
 
-	<link rel="stylesheet" href="/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/css/estilos.css">
-	<link rel="stylesheet" href="/css2/forms.css">
-	<link rel="stylesheet" href="/css2/forms.css.map">
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="">
-  
-  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">     
 
-	
-  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/glassmorph.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/text.css">
+
+
 </head>
+
 <body>
-	<header class="header" >
-		<!-- Menu bar -- Johanna	 -->
-		<nav> 
-				<ul>
-					<li>
-					<a href="#">Home</a>
-					<ul>
-					  <li><a href="#">Quiénes somos</a></li>
-					  <li>
-						<a href="#">Contactanos</a>
-						<ul>
-						  <li><a href="#">One</a></li>
-						  <li><a href="#">Two</a></li>
-						  <li><a href="#">Three</a></li>
-						</ul>
-					  </li>
-					</ul>
-				  </li>
-					<li>
-						<a href="">Machine learning</a>
-					</li>
-					<li>
-						<a href="">Empresas</a>
-					</li>
-					<li>
-						<a href="">Games</a>
-					</li>
-					<li>
-						<a href="">Trabaja</a>
-						<ul>
-							<li><a href="#">Aplica</a></li>
-							<li><a href="#">Ofertas laborales</a></li>
-						</ul>
-					</li>
-				  
-				  <li>
-					<a href="#">Aprende</a>
-					<ul>
-					  <li><a href="#">Machine Learning</a></li>
-					  <li><a href="#">VideoJuegos</a></li>
-					  <li><a href="#">Data Science</a></li>
-					  <li><a href="#">IA</a></li>
-					  <li><a href="#">Deep Learning</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="/html/form.html">Login</a>
-				  </li>
-				  <li><a href="#">Registrarse</a></li>
-				  <button class="switch" id="switch">
+    <header class="header">
+        <!-- Menu bar -- Johanna	 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                    <ul>
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li>
+                            <a href="#">Contactanos</a>
+                            <ul>
+                                <li><a href="#">One</a></li>
+                                <li><a href="#">Two</a></li>
+                                <li><a href="#">Three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Machine learning</a>
+                </li>
+                <li>
+                    <a href="">Empresas</a>
+                </li>
+                <li>
+                    <a href="">Games</a>
+                </li>
+                <li>
+                    <a href="">Trabaja</a>
+                    <ul>
+                        <li><a href="#">Aplica</a></li>
+                        <li><a href="#">Ofertas laborales</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Aprende</a>
+                    <ul>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">VideoJuegos</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">IA</a></li>
+                        <li><a href="#">Deep Learning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/html/form.html">Login</a>
+                </li>
+                <li><a href="#">Registrarse</a></li>
+                <button class="switch" id="switch">
 					<span><i class="fas fa-sun"></i></span>
 					<span><i class="fas fa-moon"></i> </span>
 				</button>
-				</ul>
-				
-			  </nav>
-		  
+            </ul>
 
-	</header>
-	<div >	
-		
-		
-		
-		<div class="hamburger">
-			<div class="_layer -top"></div>
-			<div class="_layer -mid"></div>
-			<div class="_layer -bottom"></div>
-			
-		</div>
-		<nav class="menuppal">
-			<ul>
-			  <li><a href="#">Opcion 1</a></li>
-			  <li><a href="#">Opcion 2</a></li>
-			  <li><a href="#">Opcion 3</a></li>
-			  <li><a href="#">Opcion 4</a></li>
-			  
-			</ul>
-			<button class="switch" id="switch">
+        </nav>
+
+
+    </header>
+    <div>
+        <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+
+        </div>
+        <nav class="menuppal">
+            <ul>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                            <ul>
+                                <li><a href="#">Quiénes somos</a></li>
+                                <li>
+                                    <a href="#">Contactanos</a>
+                                    <ul>
+                                        <li><a href="#">One</a></li>
+                                        <li><a href="#">Two</a></li>
+                                        <li><a href="#">Three</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Machine learning</a>
+                        </li>
+                        <li>
+                            <a href="">Empresas</a>
+                        </li>
+                        <li>
+                            <a href="">Games</a>
+                        </li>
+                        <li>
+                            <a href="">Trabaja</a>
+                            <ul>
+                                <li><a href="#">Aplica</a></li>
+                                <li><a href="#">Ofertas laborales</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Aprende</a>
+                            <ul>
+                                <li><a href="#">Machine Learning</a></li>
+                                <li><a href="#">VideoJuegos</a></li>
+                                <li><a href="#">Data Science</a></li>
+                                <li><a href="#">IA</a></li>
+                                <li><a href="#">Deep Learning</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/html/form.html">Login</a>
+                        </li>
+                        <li><a href="#">Registrarse</a></li>
+                    </ul>
+                </nav>
+            </ul>
+            <button class="switch" id="switch">
 				<span><i class="fas fa-sun"></i></span>
 				<span><i class="fas fa-moon"></i> </span>
 			</button>
-		  </nav>
-		<div>
-				<div class="Container">
-					
-                    
-				</div>
-						<footer class="article-info">
-						  <!-- information -->
-						</footer>
-					  </div>
-					</a>
-			  </div>
-		  </aside>
-		  <footer class="footer" id="item-4">
-			  
-			<div class="container">
-			  <div class="row">
-				<div class="footer-col">
-				  <h4>Instituciones</h4>
-				  <ul>
-					<li><a href="https://www.upb.edu.co/es/la-universidad">UPB</a></li>
-					<li><a href="https://www.misiontic2022.gov.co/portal/">Mision TIC</a></li>
-					<li><a href="https://machinelearning.org.in/">Machine Learning ORG</a></li>
-					<li><a href="#"></a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>Integrantes & Acompañantes</h4>
-				  <ul>
-					<li><a href="#">formador jose dager montoya	</a></li>
-					<li><a href="#">Tutor Julio césar rojas rios</a></li>
-					<li><a href="https://www.linkedin.com/in/steven-david-ramos/">scrum master Steven David Ramos</a></li>
-					<li><a href="#">software dev Jhana sanchez </a></li>
-					<li><a href="#">software dev mauricio castro</a></li>
-					<li><a href="#">software dev andres duque</a></li>
-					<li><a href="https://www.linkedin.com/in/andresfelipemonsalve/">software dev andres monsalve</a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>Web</h4>
-				  <ul>
-					<li><a href="#">Politicas de privacidad</a></li>
-					<li><a href="#">politica de cookies</a></li>
-					<li><a href="#">politicas de accesibilidad</a></li>
-					<li><a href="#"></a></li>
-				  </ul>
-				</div>
-				<div class="footer-col">
-				  <h4>follow us</h4>
-				  <div class="social-links">
-					<a href="#"><i class="fab fa-google"></i></a>
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		 </footer>  
-	  </div>
-	  
-	
-	<script src="/js/main.js"></script>
+
+
+        </nav>
+    </div>
+    <div class="text">
+        <button onclick="generate()">button</button>
+        <div class="informacion">
+            <h2>
+                ¿Qué es machine learning y cuáles son sus aplicaciones?
+            </h2>
+            <br>
+            <p>
+                ¿Qué es machine learning? Es una pregunta que se hace cada vez más frecuente en esta era del desarrollo de aplicaciones y dispositivos inteligentes. También conocido como aprendizaje de máquina o aprendizaje automático es un área de la inteligencia artificial
+                (IA) que provecha los algoritmos computacionales para incorporar la capacidad de aprender en máquinas, dispositivos y aplicaciones de software. Como tecnología disruptiva, el machine learning potencia las capacidades de las Tecnologías
+                de la Información y la comunicación (TIC). Así como de múltiples equipos electrónicos.
+            </p>
+            <section class="parallax" id="seccion1">
+
+            </section>
+            <br>
+            <h2>
+                ¿Cómo funciona el machine learning?
+            </h2>
+            <br>
+            <p>
+                El machine learning (ML) consiste básicamente en automatizar la identificación de patrones o tendencias mediante el análisis de datos. Según el caso, puede utilizar conocimientos y técnicas de la teoría estadística, los algoritmos de optimización y el
+                procesamiento de grandes volúmenes de datos. Los sistemas en donde se incluye esta técnica aprenden a identificar patrones de forma automática y a predecir comportamientos.
+            </p>
+            <section class="parallax" id="seccion2">
+
+            </section>
+
+            <br>
+            <h2>
+                ¿Qué es machine learning?
+            </h2>
+            <br>
+            <p>
+                También puede responderse según el tipo de aprendizaje utilizado. Esta clasificación depende de si se cuenta o no con datos previos o de entrenamiento. Se tienen así cuatro tipos de machine learning: Supervisado. No supervisado. Semi supervisado. Por
+                refuerzo.
+            </p>
+            <section class="parallax" id="seccion3">
+
+            </section>
+            <br>
+            <h2>
+                ¿Qué es machine learning con aprendizaje supervisado?
+            </h2>
+            <br>
+            <p>
+                El aprendizaje automático supervisado (supervised learning) trabaja con datos etiquetados para entrenar a los algoritmos mediante un histórico de datos. De esta manera, se suministran las variables de entrada o input data al algoritmo. Así, aprende a
+                asignar la etiqueta de salida o indicar la solución correspondiente. Las aplicaciones que utilizan aprendizaje supervisado relacionan grupos de características con conjuntos de datos para determinar un valor de salida.
+            </p>
+            <section class="parallax" id="seccion4">
+
+            </section>
+            <br>
+            <section>
+                <h2>
+                    ¿Qué es machine learning con aprendizaje no supervisado?
+                </h2>
+                <br>
+                <p>
+                    Tiene lugar cuando no se dispone de datos etiquetados para el entrenamiento previo del modelo de machine learning. Es decir que solo se dispone de datos de entrada real. Por lo tanto, en este esquema se describe la estructura de los datos para encontrar
+                    algún tipo de organización que los agrupe. El objetivo es enseñar al algoritmo a simplificar el análisis, deducir, predecir o clasificar a partir de estructuras y en función de similitudes (clustering).
+                </p>
+            </section>
+            <br>
+            <section>
+                <h2>
+                    ¿Qué es machine learning con aprendizaje semi supervisado?
+                </h2>
+                <br>
+                <p>
+                    En este enfoque se emplean pocos datos etiquetados y muchos datos no etiquetados para el entrenamiento de los algoritmos de aprendizaje automático. El machine learning con aprendizaje semi supervisado se caracteriza por generar modelos de predicción que
+                    funcionan mejor que los creados a partir de aprendizaje supervisado solamente.
+
+                </p>
+            </section>
+            <br>
+            <section>
+                <h2>
+                    ¿Qué es machine learning con aprendizaje por refuerzo?
+                </h2>
+                <br>
+                <p>
+                    En este tipo de aprendizaje, los algoritmos aprenden a partir de la retroalimentación que obtienen del mundo exterior como respuesta a sus acciones. El algoritmo que incorpora aprendizaje por refuerzo (reinforcement learning) explora distintas opciones
+                    y posibilidades. De esta forma, evalúa cada resultado y determina cuál es la mejor función del feedback que recibe. Así, las máquinas o dispositivos aprenden a partir de experiencias previas y tienen la capacidad de mejorar su próxima
+                    respuesta.
+                </p>
+            </section>
+            <br>
+        </div>
+    </div>
+    <div>
+        <div class="contenido">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>card one</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae delectus facere, unde itaque ipsa nesciunt repellat veritatis excepturi, nisi voluptates obcaecati quos alias reprehenderit praesentium. Nisi provident dolor perferendis
+                        porro.
+                    </p>
+                    <a href=""> Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>card two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae delectus facere, unde itaque ipsa nesciunt repellat veritatis excepturi, nisi voluptates obcaecati quos alias reprehenderit praesentium. Nisi provident dolor perferendis
+                        porro.
+                    </p>
+                    <a href=""> Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>card three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae delectus facere, unde itaque ipsa nesciunt repellat veritatis excepturi, nisi voluptates obcaecati quos alias reprehenderit praesentium. Nisi provident dolor perferendis
+                        porro.
+                    </p>
+                    <a href=""> Read More</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Instituciones</h4>
+                    <ul>
+                        <li><a href="https://www.upb.edu.co/es/la-universidad">UPB</a></li>
+                        <li><a href="https://www.misiontic2022.gov.co/portal/">Mision TIC</a></li>
+                        <li><a href="https://machinelearning.org.in/">Machine Learning ORG</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Integrantes & Acompañantes</h4>
+                    <ul>
+                        <li><a href="#">formador jose dager montoya </a></li>
+                        <li><a href="#">Tutor Julio césar rojas rios</a></li>
+                        <li><a href="https://www.linkedin.com/in/steven-david-ramos/">scrum master Steven David
+								Ramos</a></li>
+                        <li><a href="#">software dev Jhana sanchez </a></li>
+                        <li><a href="#">software dev mauricio castro</a></li>
+                        <li><a href="#">software dev andres duque</a></li>
+                        <li><a href="https://www.linkedin.com/in/andresfelipemonsalve/">software dev andres monsalve</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Web</h4>
+                    <ul>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">politica de cookies</a></li>
+                        <li><a href="#">politicas de accesibilidad</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="/js/hamburgermenu.js"></script>
-<script src="/js/forms.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/vanilla-tilt.js"></script>
+<script src="/js/anime.min.js"></script>
+<script>
+    const text = document.querySelector(".text");
+    for (var i = 0; i <= 200; i++) {
+        const blocks = document.createElement("div")
+        blocks.classList.add("block")
+        text.appendChild(blocks)
+    }
+
+    function generate() {
+
+
+        anime({
+            targets: ".block",
+            translateX: function() {
+                return anime.random(-1500, 1500)
+            },
+            translateY: function() {
+                return anime.random(-1500, 1500)
+            },
+            scale: function() {
+                return anime.random(2, 6)
+            }
+        })
+    }
+</script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/parallax.js"></script>
+
 </html>

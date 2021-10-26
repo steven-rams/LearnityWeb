@@ -1,0 +1,93 @@
+    .text {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        background: #FEFEFE;
+        padding-left: 190px;
+        padding-right: 190px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+    }
+    
+    .text {
+        position: relative;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text button {
+        position: relative;
+        z-index: 1;
+        margin: 10px;
+        border: none;
+        outline: none;
+        background: white;
+        font-size: 1.2em;
+        padding: 15px 30px;
+        cursor: pointer;
+        box-shadow: 10 50 30px rgba(0, 0, 0, 0.25);
+        /*  display: none; */
+    }
+    
+    .block {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgb(140, 46, 218);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    
+    .block:nth-child(3n+2) {
+        background: rgb(17, 36, 206);
+    }
+    
+    .block:nth-child(3n+3) {
+        background: #58d832;
+    }
+    
+    .informacion {
+        background: white;
+        z-index: 5;
+    }
+    
+    section {
+        width: 1000px;
+        height: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .parallax {
+        background: rgb(255, 255, 255) fixed no-repeat 20% 20%;
+        background-size: cover;
+    }
+    
+    #seccion1 {
+        background-image: url(/imgs/machineLearning/andrea-de-santis-zwd435-ewb4-unsplash.jpg);
+    }
+    
+    #seccion2 {
+        background-image: url(../imgs/machineLearning/chris-liverani-dBI_My696Rk-unsplash.jpg);
+    }
+    
+    #seccion3 {
+        background-image: url(../imgs/machineLearning/possessed-photography-U3sOwViXhkY-unsplash.jpg);
+    }
+    
+    #seccion4 {
+        background-image: url(../imgs/machineLearning/ray-rui-SyzQ5aByJnE-unsplash.jpg);
+    }

@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Darkmode con Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darkmode con Javascript</title>
 
-	
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/estilos.css">
-	
-	
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../css/form.css">
-  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">     
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-	
-  
+
+
 </head>
+
 <body>
-	<header class="header" >
-		<!-- Menu bar -- Johanna	 -->
-		<nav> 
-				<ul>
-					<li>
-					<a href="../index.html">Home</a>
-					<ul>
-					  <li><a href="#">Quiénes somos</a></li>
-					  <li>
-						<a href="#">Contactanos</a>
-						<ul>
-						  <li><a href="#">One</a></li>
-						  <li><a href="#">Two</a></li>
-						  <li><a href="#">Three</a></li>
-						</ul>
-					  </li>
-					</ul>
-				  </li>
-					<li>
-						<a href="">Machine learning</a>
-					</li>
-					<li>
-						<a href="">Empresas</a>
-					</li>
-					<li>
-						<a href="">Games</a>
-					</li>
-					<li>
-						<a href="">Trabaja</a>
-						<ul>
-							<li><a href="#">Aplica</a></li>
-							<li><a href="#">Ofertas laborales</a></li>
-						</ul>
-					</li>
-				  
-				  <li>
-					<a href="#">Aprende</a>
-					<ul>
-					  <li><a href="#">Machine Learning</a></li>
-					  <li><a href="#">VideoJuegos</a></li>
-					  <li><a href="#">Data Science</a></li>
-					  <li><a href="#">IA</a></li>
-					  <li><a href="#">Deep Learning</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="#">Login</a>
-				  </li>
-				  <li><a href="/html/form.html">Registrarse</a></li>
-				  <button class="switch" id="switch">
+    <header class="header">
+        <!-- Menu bar -- Johanna	 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                    <ul>
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li>
+                            <a href="#">Contactanos</a>
+                            <ul>
+                                <li><a href="#">One</a></li>
+                                <li><a href="#">Two</a></li>
+                                <li><a href="#">Three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Machine learning</a>
+                </li>
+                <li>
+                    <a href="">Empresas</a>
+                </li>
+                <li>
+                    <a href="">Games</a>
+                </li>
+                <li>
+                    <a href="">Trabaja</a>
+                    <ul>
+                        <li><a href="#">Aplica</a></li>
+                        <li><a href="#">Ofertas laborales</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Aprende</a>
+                    <ul>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">VideoJuegos</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">IA</a></li>
+                        <li><a href="#">Deep Learning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li><a href="/html/form.html">Registrarse</a></li>
+                <button class="switch" id="switch">
 					<span><i class="fas fa-sun"></i></span>
 					<span><i class="fas fa-moon"></i> </span>
 				</button>
-				</ul>
-				
-			  </nav>
-		  
+            </ul>
 
-	</header> <div class="login-wrap">
+        </nav>
+
+
+    </header>
+    <div class="login-wrap">
         <div class="login-html">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
@@ -99,7 +102,7 @@
                         <label for="check"><span class="icon"></span> Keep me Signed in</label>
                     </div>
                     <div class="group">
-                        <input type="submit" class="button" value="Sign In">
+                        <input type="submit" class="button" value="Sign In" href="">
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
