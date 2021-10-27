@@ -73,7 +73,7 @@ a {
 
 .login-html .tab,
 .login-form .group .label,
-.login-form .group .button {
+{
     text-transform: uppercase;
 }
 
@@ -113,6 +113,7 @@ a {
 
 .login-form .group .input,
 .login-form .group .button {
+    cursor: pointer;
     border: none;
     padding: 15px 20px;
     border-radius: 25px;

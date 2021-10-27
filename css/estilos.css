@@ -30,8 +30,6 @@ nav {
     z-index: 200000;
 }
 
-@media screen {}
-
 body.dark nav {
     background: #082032;
     z-index: 123;
@@ -247,12 +245,6 @@ body.dark .footer-col .social-links a {
 }
 
 @media(max-width: 767px) {
-    .header {
-        width: 100%;
-    }
-}
-
-@media(max-width: 767px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
@@ -276,7 +268,6 @@ body {
     left: 0;
     top: 0;
     height: 30px;
-    margin-top: 50px;
     width: 30px;
     padding: 20px 20px;
     -webkit-transform: translate3d(0, 0, 0);
@@ -288,7 +279,8 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+    display: none;
 }
 
 .hamburger.is-active {
@@ -359,26 +351,30 @@ body {
     padding: 0;
 }
 
-.menuppal ul li {
-    list-style: none;
-    text-align: center;
-    font-family: Verdadna, Arial, Helvetica;
-    font-size: 1.5rem;
-    line-height: 3em;
-    height: 3em;
-    color: #369;
-    text-transform: none;
-    font-weight: bold;
-}
-
-.menuppal ul li a {
-    text-decoration: none;
-    color: #369;
-}
-
-.menuppal ul li a:hover {
-    text-decoration: none;
-    color: #333;
+@media (max-width:789px) {
+    .hamburger {
+        position: fixed;
+        background-color: transparent;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+        z-index: 1002;
+        cursor: pointer;
+        display: grid;
+    }
+    .hamburger.is-active {
+        background-color: none;
+    }
+    ._layer {
+        background: #638abd;
+    }
+    .menuppal ul {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 1fr 1fr;
+    }
 }
 
 nav ul {
@@ -399,8 +395,6 @@ nav ul li {
     display: inline-block;
     list-style-type: none;
 }
-
-nav ul {}
 
 nav>ul>li>a {
     color: rgb(10, 9, 9);
@@ -477,7 +471,11 @@ nav li>ul>li:hover>ul {
 
 .contenedor {
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
+}
+
+@media(max-width: 991px) {
+    header {
+        display: none;
+    }
 }
