@@ -1,4 +1,4 @@
-const btnswitch = document.querySelector("#switch");
+const btnswitch = document.querySelector("#switch", "#switch2");
 btnswitch.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     btnswitch.classList.toggle('active');
@@ -13,6 +13,7 @@ btnswitch.addEventListener('click', () => {
 
     }
 });
+
 
 //obtenemos el modo actual
 

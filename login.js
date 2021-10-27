@@ -30,7 +30,7 @@ function iniciar_sesion(usuario, contrasena, rcaptcha) {
 
 
     if (registros.includes({ usuario, contrasena })) {
-        return true;
+        return;
     }
     if (rcaptcha == 5) {
         return true
