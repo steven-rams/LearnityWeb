@@ -58,8 +58,8 @@ body.dark .informacion h2 {
 }
 
 body.dark header a {
-    font-weight: 1000;
     color: #FF4C29;
+    font-family: "Roboto";
 }
 
 body.dark .block:nth-child(3n+2) {
@@ -262,7 +262,11 @@ body {
     padding: 0;
 }
 
-.hamburger {
+body.dark .contenedor p {
+    color: rgb(17, 180, 17);
+}
+
+bod .hamburger {
     position: fixed;
     background-color: transparent;
     left: 0;
@@ -351,7 +355,7 @@ body {
     padding: 0;
 }
 
-@media (max-width:789px) {
+@media (max-width:988px) {
     .hamburger {
         position: fixed;
         background-color: transparent;
@@ -363,11 +367,21 @@ body {
         cursor: pointer;
         display: grid;
     }
+    .contenedor p {
+        color: rgb(17, 180, 17);
+    }
+    body.dark header a {
+        color: #FF4C29;
+        font-family: "Roboto";
+    }
     .hamburger.is-active {
         background-color: none;
     }
     ._layer {
-        background: #638abd;
+        background: rgb(22, 199, 154);
+    }
+    body.dark ._layer {
+        background: #FF4C29;
     }
     .menuppal ul {
         display: grid;
@@ -388,7 +402,7 @@ nav {
     text-align: center;
     position: fixed;
     width: 1850px;
-    height: 70px;
+    height: 60px;
 }
 
 nav ul li {
@@ -397,7 +411,7 @@ nav ul li {
 }
 
 nav>ul>li>a {
-    color: rgb(10, 9, 9);
+    color: #777;
     display: block;
     line-height: 2em;
     padding: 0.5em 2em;
@@ -422,7 +436,7 @@ nav li>ul li {
 }
 
 nav li>ul li a {
-    color: #111;
+    color: #777;
     display: block;
     line-height: 2em;
     padding: 0.5em 2em;
@@ -440,6 +454,23 @@ nav li {
     border-radius: 18px;
 }
 
+body.dark .main-heading {
+    color: #FF4C29;
+    text-transform: uppercase;
+}
+
+body.dark .main-heading-secondary {
+    font-family: sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 31px;
+    color: rgb(48, 240, 0);
+    animation: moveInRight 4s ease-out;
+    margin-bottom: 50px;
+}
+
 body.dark nav a:hover {
     color: #FF4C29;
     border-radius: 18px;
@@ -450,11 +481,6 @@ nav li:hover>ul {
     display: block;
     border-radius: 18px;
     transition: 1s;
-}
-
-nav li>ul>li ul {
-    display: none;
-    background-color: #888;
 }
 
 nav li>ul>li:hover>ul {
@@ -475,7 +501,7 @@ nav li>ul>li:hover>ul {
 }
 
 @media(max-width: 991px) {
-    header {
+    header nav {
         display: none;
     }
 }
