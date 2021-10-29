@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/games.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li>
+                            <a href="#">Contáctanos</a>
+                            <ul>
+                                <li><a href="#">One</a></li>
+                                <li><a href="#">Two</a></li>
+                                <li><a href="#">Three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Machine learning</a>
+                </li>
+                <li>
+                    <a href="">Empresas</a>
+                </li>
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+                <li>
+                    <a href="">Trabaja</a>
+                    <ul>
+                        <li><a href="#">Aplica</a></li>
+                        <li><a href="#">Ofertas laborales</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Aprende</a>
+                    <ul>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">VideoJuegos</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">IA</a></li>
+                        <li><a href="#">Deep Learning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/html/form.html">Login</a>
+                </li>
+                <li><a href="#">Registrarse</a></li>
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i> </span>
+                </button>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <div class="allAboutGames">
+        
+        <div class="titleDiv">
+            <br>
+            <br>
+        <!-- <img src="../img/retroCyberpunk.gif" alt="videoGamesImg"> -->
+            <h1 class="titlesH" id="gamesMainTitle">Machine Learning aplicado a los videojuegos</h1>
+        </div>
+            <h2 class="titlesH" id="gamesSubtitle">Una introducción sencilla a cómo diferentes métodos son aplicados a los videojuegos.</h2>
+
+            <p class="gamesMainContent" id="GamesContent">
+                El aprendizaje automático es aplicado a los videojuegos por medio de datos estadísticos pasando por
+                diferentes algoritmos; esto hace que los programas se ejecuten sin seguir un patrón o código específico,
+                sino, dependiendo de los datos guardados. En el campo de los videojuegos, estos datos pueden ser movimientos
+                ejecutados por el jugador, y el trabajo de la máquina es memorizar y predecir los siguientes datos o
+                movimientos del usuario. Esto hace a la máquina un oponente más competitivo, básicamente, es lo que los
+                humanos asimilan como “inteligencia”.
+                Sin embargo, podría no ser un proceso tan sencillo como aparenta. Existen diferentes técnicas o métodos
+                para desarrollar el Machine Learning o Aprendizaje Automático. Por ejemplo, el
+                <a href="https://es.wikipedia.org/wiki/Aprendizaje_profundo" id="deepLearning" 
+                class="links" onmouseover="changeColor1('#90ee90')" OnMOuseOut="changeColor1('#6495ed')">
+
+                    Aprendizaje Profundo</a> o Deep Learning se basa en
+                <a href="https://www.ibm.com/docs/es/spss-modeler/SaaS?topic=networks-neural-model" id="neuronalNetwork" 
+                class="links" onmouseover="changeColor2('#90ee90')" OnMOuseOut="changeColor2('#6495ed')">
+                redes neuronales</a>
+                , un método que emula la funcionalidad de una neurona humana por medio de nodos y datos estadísticos
+                simultáneos, teniendo nodos de entradas, nodos que cumplen de pocas
+                a una infinidad de funcionalidades, y nodos o nodo de salida. ¿Su finalidad? Aprender, ejecutar y predecir,
+                dependiendo de los requerimientos de sus funciones.
+                A propósito de requerimientos para diferentes circunstancias, también se usan otros métodos como:
+                <a href="https://es.wikipedia.org/wiki/Red_neuronal_convolucional" id="convolutionalNetwork"
+                class="links" onmouseover="changeColor3('#90ee90')" OnMOuseOut="changeColor3('#6495ed')">Redes neuronales convolucionales</a>,
+
+                <a href="https://es.wikipedia.org/wiki/Aprendizaje_por_refuerzo" id="reinforcementLearning"
+                class="links" onmouseover="changeColor4('#90ee90')" OnMOuseOut="changeColor4('#6495ed')">aprendizaje por refuerzo</a>,
+
+                <a href="https://es.wikipedia.org/wiki/Red_neuronal_recurrente" id="recurrentNetwork" 
+                class="links" onmouseover="changeColor5('#90ee90')" OnMOuseOut="changeColor5('#6495ed')">redes
+                neuronales recurrentes</a>,
+
+                entre otros. Un par de juegos básicos tocados de cierta manera por el aprendizaje automático son 
+
+                <a href="https://www.chess.com/es/play" id="chess" class="links" onmouseover="changeColor6('#90ee90')" 
+                OnMOuseOut="changeColor6('#6495ed')">ajedrez</a> y 
+
+                <a href="https://online-go.com/learn-to-play-go" id="go" 
+                class="links" onmouseover="changeColor7('#90ee90')" OnMOuseOut="changeColor7('#6495ed')">GO</a>.
+                <br>
+                <br>
+                Un ejemplo moderno es
+
+                <a href="https://www.epicgames.com/store/es-ES/p/detroit-become-human" 
+                id="detroit" class="links" onmouseover="changeColor8('#90ee90')" OnMOuseOut="changeColor8('#6495ed')">Detroit: Become Human</a>,
+                
+                un juego en el que la historia se ve alterada dependiendo de las decisiones del jugador, con alto peso en
+                contenido filosófico
+                que convenientemente cuestiona: ¿Qué hace a los humanos lo que son? y ¿Podríamos en un futuro diferenciar a
+                los humanos de una máquina
+                inteligente, capaz de emular cualquier acción y emoción humana?
+                <br>
+
+                Otros ejemplos populares son <a href="https://starcraft2.com/es-es/" id="starcraft"
+                class="links" onmouseover="changeColor9('#90ee90')" OnMOuseOut="changeColor9('#6495ed')">Starcaft</a> y 
+
+                <a href="https://bethesda.net/es/game/doom" id="doom" 
+                class="links" onmouseover="changeColor10('#90ee90')" OnMOuseOut="changeColor10('#6495ed')">Doom</a>.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+    </div>
+        
+        <div>
+            <footer class="footer">
+                <legend class="infoFooter"> "Nombre Empresa" | Todos los derechos reservados. | Todos los enlaces y marcas mostradas 
+                    pertenecen a sus respectivos dueños y están sujetas a las leyes de sus respectivos países.
+                </legend>
+                <br>
+                <br>     
+                <legend class="year">
+                    © 2021
+                </legend>
+            </footer>
+        </div>
+            
+<script src="../js/games.js"></script>
+</body>
+
+</html>
